@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Pikachu-PNG-Transparent-Image.png" type="Texture" id=1]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 10.0
+bounce = 0.5
+
+[node name="Pikachu" type="RigidBody2D"]
+mass = 10.0
+physics_material_override = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -29.0969, -28.8641, -15.4269, -10.2102, -16.7085, 0.754265, -14.1453, 4.88374, -23.1163, 19.4081, -15.7117, 28.2366, 8.49558, 28.8062, 17.8937, 19.9777, 12.0555, 13.4275, 15.1882, 11.5763, 13.1946, 9.01322, 20.884, 5.73811, 14.6186, -2.09365, 26.5798, -5.36876, 29.143, -18.6116, 9.77714, -11.3494, 23.0199, -26.8705, 5.36287, -16.0484, -3.18087, -17.8996, -10.3007, -15.906 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.07, 0.07 )
+texture = ExtResource( 1 )
